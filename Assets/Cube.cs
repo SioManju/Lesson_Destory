@@ -18,7 +18,7 @@ public class Cube : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision) //ぶつかったら
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player")) //ぶつかったオブジェクトのタグが「Player」なら消滅する
         {
             //このゲームオブジェクトを消滅させる
             Destroy(gameObject);
